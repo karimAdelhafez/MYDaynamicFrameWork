@@ -15,5 +15,5 @@ jobs:
            cache: maven
            distribution: "temurin"
        - uses: browser-actions/setup-chrome@latest
-       - uses: ./.github/actions/my-action
        - run: mvn clean test
+    uses: ./.github/actions/my-action
