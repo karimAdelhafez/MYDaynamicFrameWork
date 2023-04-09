@@ -7,6 +7,7 @@ import com.qacart.todo.pages.LoginPage;
 import com.qacart.todo.pages.TodoPage;
 import com.qacart.todo.utls.ConfigUtils;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.qameta.allure.Feature;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -22,11 +23,12 @@ import java.util.Set;
 
 public class LoginTest extends BaseTest {
 //private WebDriver driver;
-    @Test
+    @Feature("Authentication")
+    @Test(description = "Login Test")
     public void ShouldBeAbleToLoginWthEmailAndPassword(){
 
 
-    LoginPage loginPage = new LoginPage(driver);
+    LoginPage loginPage = new LoginPage(getDriver());
         boolean isWelcomeMessageDisplayed=
                 loginPage
                     .load()

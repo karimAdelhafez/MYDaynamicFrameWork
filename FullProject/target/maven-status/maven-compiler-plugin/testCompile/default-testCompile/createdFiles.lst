@@ -1,4 +1,3 @@
-com\qacart\todo\pages\NewAccountPage.class
 com\qacart\todo\testcases\LoginTest.class
 com\qacart\todo\base\BasePage.class
 com\qacart\todo\Factory\DriverFactory.class
@@ -8,5 +7,11 @@ com\qacart\todo\testcases\CreateNewAccountTest.class
 com\qacart\todo\pages\NewTodoPage.class
 com\qacart\todo\testcases\TodoTest.class
 com\qacart\todo\utls\PropertiesUtils.class
-com\qacart\todo\pages\TodoPage.class
+com\qacart\todo\testcases\Dummy.class
 com\qacart\todo\utls\ConfigUtils.class
+com\qacart\todo\object\User.class
+com\qacart\todo\pages\NewAccountPage.class
+com\qacart\todo\utls\CookieUtils.class
+com\qacart\todo\utls\UserUtils.class
+com\qacart\todo\api\RegisterApi.class
+com\qacart\todo\pages\TodoPage.class

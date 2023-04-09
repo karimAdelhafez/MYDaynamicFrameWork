@@ -8,6 +8,7 @@ import com.qacart.todo.pages.NewTodoPage;
 import com.qacart.todo.pages.TodoPage;
 import com.qacart.todo.utls.ConfigUtils;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.qameta.allure.Feature;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -16,10 +17,11 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
+@Feature("Creation and Deletion")
 
 public class TodoTest extends BaseTest {
     //private WebDriver driver;
-    @Test
+    @Test(description = "Test Create New Todo and Test Deleting it")
     public void AddTodo() {
         RegisterApi registerApi = new RegisterApi();
         registerApi.register();
@@ -29,7 +31,7 @@ public class TodoTest extends BaseTest {
 //LoginPage loginPage = new LoginPage(driver);
 //loginPage.load();
 
-        NewTodoPage newtodopage = new NewTodoPage(driver);
+        NewTodoPage newtodopage = new NewTodoPage(getDriver());
         newtodopage.load();
         injectCookiesToBrowser(registerApi.getCookies());
 
@@ -44,11 +46,24 @@ public class TodoTest extends BaseTest {
        // Assert.assertTrue(w)  ;
 
         //Delete Todo
-        TodoPage todoPage = new TodoPage(driver);
+        TodoPage todoPage = new TodoPage(getDriver());
         todoPage.DeleteTodo();
         boolean NoTodos = todoPage.NoTodoMessage();
         Assert.assertTrue(NoTodos);
     }
+
+   /* @Test
+    public void DeleteTodo(){
+        RegisterApi registerApi = new RegisterApi();
+        registerApi.register();
+        NewTodoPage newtodopage = new NewTodoPage(driver);
+        newtodopage.load();
+        injectCookiesToBrowser(registerApi.getCookies());
+        TodoPage todoPage = new TodoPage(driver);
+        todoPage.DeleteTodo();
+        boolean NoTodos = todoPage.NoTodoMessage();
+        Assert.assertTrue(NoTodos);
+    }*/
 }
 
 

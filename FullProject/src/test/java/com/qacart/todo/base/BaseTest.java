@@ -11,22 +11,31 @@ import org.testng.annotations.BeforeMethod;
 import java.util.List;
 
 public class BaseTest {
-    protected WebDriver driver;
+    protected ThreadLocal<WebDriver> driver= new ThreadLocal<>();
+
+    public void setDriver(WebDriver driver) {
+        this.driver.set(driver);
+    }
+
+    public WebDriver  getDriver() {
+        return this.driver.get();
+    }
 
     @BeforeMethod
     public void Setup(){
 
-        driver = new DriverFactory().InitializeDriver();
+        WebDriver driver = new DriverFactory().InitializeDriver();
+        setDriver(driver);
     }
    @AfterMethod
     public void quite(){
 
-        driver.quit();
+        getDriver().quit();
     }
     public void injectCookiesToBrowser(List<Cookie> restAssuredCookies){
         List<org.openqa.selenium.Cookie> seleniumCookies = CookieUtils.convertRestAssuredCookiesToSeleniumCookies(restAssuredCookies);
    for (org.openqa.selenium.Cookie cookie : seleniumCookies){
-       driver.manage().addCookie(cookie);
+       getDriver().manage().addCookie(cookie);
    }
     }
 
