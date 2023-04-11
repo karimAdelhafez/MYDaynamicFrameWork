@@ -122,5 +122,6 @@
     <orderEntry type="library" name="Maven: io.qameta.allure:allure-java-commons:2.21.0" level="project" />
     <orderEntry type="library" name="Maven: io.qameta.allure:allure-model:2.21.0" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: io.qameta.allure:allure-test-filter:2.21.0" level="project" />
+    <orderEntry type="library" name="Maven: org.yaml:snakeyaml:2.0" level="project" />
   </component>
 </module>
