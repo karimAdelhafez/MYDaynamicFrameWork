@@ -1,49 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-13T02:52:07 EET" name="Surefire suite" finished-at="2023-04-13T02:52:25 EET" duration-ms="17626">
+  <suite started-at="2023-04-13T03:09:28 EET" name="Surefire suite" finished-at="2023-04-13T03:09:47 EET" duration-ms="18605">
     <groups>
     </groups>
-    <test started-at="2023-04-13T02:52:07 EET" name="Surefire test" finished-at="2023-04-13T02:52:25 EET" duration-ms="17626">
+    <test started-at="2023-04-13T03:09:28 EET" name="Surefire test" finished-at="2023-04-13T03:09:47 EET" duration-ms="18605">
       <class name="com.qacart.todo.testcases.LoginTest">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:com.qacart.todo.testcases.LoginTest@5e600dd5]" started-at="2023-04-13T02:52:08 EET" name="Setup" finished-at="2023-04-13T02:52:12 EET" duration-ms="4730" status="PASS">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:com.qacart.todo.testcases.LoginTest@5e600dd5]" started-at="2023-04-13T03:09:28 EET" name="Setup" finished-at="2023-04-13T03:09:33 EET" duration-ms="4713" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="ShouldBeAbleToLoginWthEmailAndPassword()[pri:0, instance:com.qacart.todo.testcases.LoginTest@5e600dd5]" started-at="2023-04-13T02:52:12 EET" name="ShouldBeAbleToLoginWthEmailAndPassword" description="Login Test" finished-at="2023-04-13T02:52:17 EET" duration-ms="4980" status="PASS">
+        <test-method signature="ShouldBeAbleToLoginWthEmailAndPassword()[pri:0, instance:com.qacart.todo.testcases.LoginTest@5e600dd5]" started-at="2023-04-13T03:09:33 EET" name="ShouldBeAbleToLoginWthEmailAndPassword" description="Login Test" finished-at="2023-04-13T03:09:43 EET" duration-ms="9918" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[target frame detached
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=111.0.5563.146)
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cd92a205aa4eeceb410ca369977071fa, findElement {using=css selector, value=[data-testid="welcome"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.146, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\ZBOOK\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60838}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60838/devtoo..., se:cdpVersion: 111.0.5563.146, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cd92a205aa4eeceb410ca369977071fa]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: target frame detached
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=111.0.5563.146)
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cd92a205aa4eeceb410ca369977071fa, findElement {using=css selector, value=[data-testid="welcome"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.146, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\ZBOOK\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60838}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60838/devtoo..., se:cdpVersion: 111.0.5563.146, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cd92a205aa4eeceb410ca369977071fa
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy18.isDisplayed(Unknown Source)
+at com.qacart.todo.pages.TodoPage.isWelcomeMessageDisplayed(TodoPage.java:33)
+at com.qacart.todo.testcases.LoginTest.ShouldBeAbleToLoginWthEmailAndPassword(LoginTest.java:36)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ShouldBeAbleToLoginWthEmailAndPassword -->
-        <test-method is-config="true" signature="quite()[pri:0, instance:com.qacart.todo.testcases.LoginTest@5e600dd5]" started-at="2023-04-13T02:52:17 EET" name="quite" finished-at="2023-04-13T02:52:21 EET" duration-ms="3196" status="PASS">
+        <test-method is-config="true" signature="quite()[pri:0, instance:com.qacart.todo.testcases.LoginTest@5e600dd5]" started-at="2023-04-13T03:09:43 EET" name="quite" finished-at="2023-04-13T03:09:44 EET" duration-ms="413" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quite -->
       </class> <!-- com.qacart.todo.testcases.LoginTest -->
       <class name="com.qacart.todo.testcases.TodoTest">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:com.qacart.todo.testcases.TodoTest@576d5deb]" started-at="2023-04-13T02:52:08 EET" name="Setup" finished-at="2023-04-13T02:52:12 EET" duration-ms="4714" status="PASS">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:com.qacart.todo.testcases.TodoTest@576d5deb]" started-at="2023-04-13T03:09:28 EET" name="Setup" finished-at="2023-04-13T03:09:33 EET" duration-ms="4723" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="AddTodo()[pri:0, instance:com.qacart.todo.testcases.TodoTest@576d5deb]" started-at="2023-04-13T02:52:12 EET" name="AddTodo" description="Test Create New Todo and Test Deleting it" finished-at="2023-04-13T02:52:25 EET" duration-ms="12256" status="PASS">
+        <test-method signature="AddTodo()[pri:0, instance:com.qacart.todo.testcases.TodoTest@576d5deb]" started-at="2023-04-13T03:09:33 EET" name="AddTodo" description="Test Create New Todo and Test Deleting it" finished-at="2023-04-13T03:09:44 EET" duration-ms="11312" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddTodo -->
-        <test-method is-config="true" signature="quite()[pri:0, instance:com.qacart.todo.testcases.TodoTest@576d5deb]" started-at="2023-04-13T02:52:25 EET" name="quite" finished-at="2023-04-13T02:52:25 EET" duration-ms="375" status="PASS">
+        <test-method is-config="true" signature="quite()[pri:0, instance:com.qacart.todo.testcases.TodoTest@576d5deb]" started-at="2023-04-13T03:09:45 EET" name="quite" finished-at="2023-04-13T03:09:47 EET" duration-ms="2211" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quite -->
       </class> <!-- com.qacart.todo.testcases.TodoTest -->
       <class name="com.qacart.todo.testcases.CreateNewAccountTest">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:com.qacart.todo.testcases.CreateNewAccountTest@130c12b7]" started-at="2023-04-13T02:52:08 EET" name="Setup" finished-at="2023-04-13T02:52:12 EET" duration-ms="4714" status="PASS">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:com.qacart.todo.testcases.CreateNewAccountTest@130c12b7]" started-at="2023-04-13T03:09:28 EET" name="Setup" finished-at="2023-04-13T03:09:33 EET" duration-ms="4716" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="fillform()[pri:0, instance:com.qacart.todo.testcases.CreateNewAccountTest@130c12b7]" started-at="2023-04-13T02:52:12 EET" name="fillform" description="Test Create New Account" finished-at="2023-04-13T02:52:19 EET" duration-ms="6145" status="PASS">
+        <test-method signature="fillform()[pri:0, instance:com.qacart.todo.testcases.CreateNewAccountTest@130c12b7]" started-at="2023-04-13T03:09:33 EET" name="fillform" description="Test Create New Account" finished-at="2023-04-13T03:09:39 EET" duration-ms="6210" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fillform -->
-        <test-method is-config="true" signature="quite()[pri:0, instance:com.qacart.todo.testcases.CreateNewAccountTest@130c12b7]" started-at="2023-04-13T02:52:19 EET" name="quite" finished-at="2023-04-13T02:52:21 EET" duration-ms="2358" status="PASS">
+        <test-method is-config="true" signature="quite()[pri:0, instance:com.qacart.todo.testcases.CreateNewAccountTest@130c12b7]" started-at="2023-04-13T03:09:39 EET" name="quite" finished-at="2023-04-13T03:09:41 EET" duration-ms="1415" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quite -->
