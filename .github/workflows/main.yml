@@ -2,8 +2,10 @@ name: Run Selenium Test
 
 on:
   push:
-    branches:
-      -master
+    trigger:
+      branches:
+        include:
+          - master
 
 jobs:
   test:
