@@ -6,11 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="FullProject" />
+        <module name="MYDaynamicFrameWork" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="FullProject" target="18" />
-    </bytecodeTargetLevel>
   </component>
 </project>

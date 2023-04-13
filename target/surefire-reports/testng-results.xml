@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-04-13T02:52:07 EET" name="Surefire suite" finished-at="2023-04-13T02:52:25 EET" duration-ms="17626">
+    <groups>
+    </groups>
+    <test started-at="2023-04-13T02:52:07 EET" name="Surefire test" finished-at="2023-04-13T02:52:25 EET" duration-ms="17626">
+      <class name="com.qacart.todo.testcases.LoginTest">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:com.qacart.todo.testcases.LoginTest@5e600dd5]" started-at="2023-04-13T02:52:08 EET" name="Setup" finished-at="2023-04-13T02:52:12 EET" duration-ms="4730" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="ShouldBeAbleToLoginWthEmailAndPassword()[pri:0, instance:com.qacart.todo.testcases.LoginTest@5e600dd5]" started-at="2023-04-13T02:52:12 EET" name="ShouldBeAbleToLoginWthEmailAndPassword" description="Login Test" finished-at="2023-04-13T02:52:17 EET" duration-ms="4980" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ShouldBeAbleToLoginWthEmailAndPassword -->
+        <test-method is-config="true" signature="quite()[pri:0, instance:com.qacart.todo.testcases.LoginTest@5e600dd5]" started-at="2023-04-13T02:52:17 EET" name="quite" finished-at="2023-04-13T02:52:21 EET" duration-ms="3196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quite -->
+      </class> <!-- com.qacart.todo.testcases.LoginTest -->
+      <class name="com.qacart.todo.testcases.TodoTest">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:com.qacart.todo.testcases.TodoTest@576d5deb]" started-at="2023-04-13T02:52:08 EET" name="Setup" finished-at="2023-04-13T02:52:12 EET" duration-ms="4714" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="AddTodo()[pri:0, instance:com.qacart.todo.testcases.TodoTest@576d5deb]" started-at="2023-04-13T02:52:12 EET" name="AddTodo" description="Test Create New Todo and Test Deleting it" finished-at="2023-04-13T02:52:25 EET" duration-ms="12256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddTodo -->
+        <test-method is-config="true" signature="quite()[pri:0, instance:com.qacart.todo.testcases.TodoTest@576d5deb]" started-at="2023-04-13T02:52:25 EET" name="quite" finished-at="2023-04-13T02:52:25 EET" duration-ms="375" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quite -->
+      </class> <!-- com.qacart.todo.testcases.TodoTest -->
+      <class name="com.qacart.todo.testcases.CreateNewAccountTest">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:com.qacart.todo.testcases.CreateNewAccountTest@130c12b7]" started-at="2023-04-13T02:52:08 EET" name="Setup" finished-at="2023-04-13T02:52:12 EET" duration-ms="4714" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="fillform()[pri:0, instance:com.qacart.todo.testcases.CreateNewAccountTest@130c12b7]" started-at="2023-04-13T02:52:12 EET" name="fillform" description="Test Create New Account" finished-at="2023-04-13T02:52:19 EET" duration-ms="6145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillform -->
+        <test-method is-config="true" signature="quite()[pri:0, instance:com.qacart.todo.testcases.CreateNewAccountTest@130c12b7]" started-at="2023-04-13T02:52:19 EET" name="quite" finished-at="2023-04-13T02:52:21 EET" duration-ms="2358" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quite -->
+      </class> <!-- com.qacart.todo.testcases.CreateNewAccountTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
