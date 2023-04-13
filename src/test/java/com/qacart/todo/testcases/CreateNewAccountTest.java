@@ -14,7 +14,7 @@ public class CreateNewAccountTest extends BaseTest {
         LoginPage loginpage = new LoginPage(getDriver());
         loginpage.load();
         NewAccountPage newaccount = new NewAccountPage(getDriver());
-        newaccount.signup("karim","adel","karim.adel38@test.com","12345678","12345678");
+        newaccount.signup("karim","adel","karim.adel39@test.com","12345678","12345678");
 
     }
 
