@@ -15,6 +15,9 @@ public class RegisterApi {
     private static String accessToken;
     private static String userId;
     private static String firstName;
+    private static String email;
+    private static String password;
+
 
     public String getToken(){
     return this.accessToken;
@@ -31,6 +34,7 @@ public class RegisterApi {
     public String getFirstName() {
         return firstName;
     }
+
 
     public  void register(){
         User user =UserUtils.generateRandomUser();
@@ -54,6 +58,7 @@ public class RegisterApi {
          accessToken = response.path("accessToken");
          userId=response.path("userID");
          firstName = response.path("firstName");
+
 
 
 
